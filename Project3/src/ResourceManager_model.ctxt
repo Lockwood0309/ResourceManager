@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=ResourceManager_model
+comment1.params=
+comment1.target=ResourceManager_model()
+comment2.params=
+comment2.target=java.util.ArrayList\ read_file()
+comment3.params=
+comment3.target=int\ get_resource_count()
+comment4.params=
+comment4.target=void\ add_resource()
+numComments=5

@@ -1,0 +1,14 @@
+; Single resource
+; Release by one process should update 
+; hold and wait vectors of other processes in FCFS manner
+
+3
+1   5
+request 0 0 4
+request 2 0 3     ; partial allocation and P2 is blocked
+request 1 0 2     ; none granted and P1 is blocked
+release 0 0 1     ; free resource given to P2 (but stay blocked)
+release 0 0 3     ; free resources should be given first to P2 then P1
+release 2 0 2
+release 1 0 2
+release 2 0 1
